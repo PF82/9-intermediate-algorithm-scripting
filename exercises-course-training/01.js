@@ -37,7 +37,7 @@ Use Math.min() to find the minimum value of two numbers.
 Hint 3
 Remember to that you must add all the numbers in between so this would require a way to get those numbers.
 
-Solutions
+Solution
 function sumAll(arr) {
   let max = Math.max(arr[0], arr[1]);
   let min = Math.min(arr[0], arr[1]);

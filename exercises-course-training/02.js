@@ -51,7 +51,7 @@ Use filter to get the new array, you will need to create a callback function.
 Hint 3
 The best way to go about the callback function is to check if the number from the new merged array is not in both original arrays and return it.
 
-Solutions
+Solution
 function diffArray(arr1, arr2) {
   const newArr = [];
 

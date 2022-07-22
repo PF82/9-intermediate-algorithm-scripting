@@ -46,7 +46,7 @@ You need to work with arguments as if it was a regular array. The best way is to
 Hint 2
 You may want to use use various methods like: indexOf(), includes(), or filter(). When in doubt about any function, check those docs!
 
-Solutions
+Solution
 function destroyer(arr) {
   const valsToRemove = Object.values(arguments).slice(1);
   const filteredArray = [];

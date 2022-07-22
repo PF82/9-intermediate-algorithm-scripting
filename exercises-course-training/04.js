@@ -10,9 +10,12 @@ last: "Capulet" }], and the second argument is { last: "Capulet" }, then you mus
 */
 
 function whatIsInAName(collection, source) {
-  const arr = [];
-  // Only change code below this line
+  // "What's in a name? that which we call a rose
+  // By any other name would smell as sweet.”
+  // -- by William Shakespeare, Romeo and Juliet
   const souceKeys = Object.keys(source);
+
+  // filter the collection
   return collection.filter(obj => {
     for (let i = 0; i < souceKeys.length; i++) {
       if (!obj.hasOwnProperty(souceKeys[i]) ||
@@ -22,8 +25,6 @@ function whatIsInAName(collection, source) {
     }
     return true;
   });
-  // Only change code above this line
-  return arr;
 }
 
 whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" });
@@ -53,7 +54,7 @@ Try to use the Object.prototype.hasOwnProperty method to know if the property na
 Hint 3
 Check equivalence of Object in collection with Object passed as second parameter to whatIsInAName function.
 
-Solutions
+Solution
 function whatIsInAName(collection, source) {
   // "What's in a name? that which we call a rose
   // By any other name would smell as sweet.”

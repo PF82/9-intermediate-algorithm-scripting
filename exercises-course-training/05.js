@@ -15,7 +15,7 @@ function spinalCase(str) {
 }
 spinalCase('This Is Spinal Tap');
 
-console.log()
+console.log(spinalCase('This Is Spinal Tap'))
 // document.getElementById("demo").innerHTML = "";
 
 /*
@@ -39,7 +39,7 @@ Hint 3
 The tricky part is getting the regular expression part to work, once you do that then just turn the uppercase to lowercase and replace 
 spaces with dashes using replace().
 
-Solutions
+Solution
 function spinalCase(str) {
   // Create a variable for the white space and underscores.
   var regex = /\s+|_+/g;
